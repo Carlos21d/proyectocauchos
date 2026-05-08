@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcas | Cauchos Express</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0d0d0d;
+      color:white;
+    }
+
+    /* HERO */
+
+    .hero{
+      height:60vh;
+      background:
+      linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+      url('imagenes/hero.jpg') center/cover no-repeat;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero-content h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero-content p{
+      font-size:22px;
+      color:#d1d1d1;
+    }
+
+    /* MARCAS */
+
+    .marcas{
+      padding:80px 8%;
+    }
+
+    .titulo{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .titulo h2{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    .titulo p{
+      color:#bfbfbf;
+      font-size:18px;
+    }
+
+    .grid-marcas{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:30px;
+    }
+
+    .marca-card{
+      background:#161616;
+      border-radius:20px;
+      overflow:hidden;
+      transition:.4s;
+      border:1px solid rgba(255,255,255,.05);
+    }
+
+    .marca-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 10px 25px rgba(0,0,0,.5);
+    }
+
+    .marca-card img{
+      width:100%;
+      height:220px;
+      object-fit:contain;
+      background:#111;
+      padding:20px;
+      display:block;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .marca-info{
+      padding:25px;
+      text-align:center;
+    }
+
+    .marca-info h3{
+      font-size:28px;
+      margin-bottom:12px;
+    }
+
+    .marca-info p{
+      color:#cfcfcf;
+      line-height:1.6;
+      font-size:15px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      background:#0066cc;
+      color:white;
+      text-decoration:none;
+      padding:12px 28px;
+      border-radius:40px;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#0088ff;
+    }
+
+    footer{
+      background:#111;
+      text-align:center;
+      padding:30px;
+      color:#aaa;
+      margin-top:50px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .hero-content h1{
+        font-size:40px;
+      }
+
+      .hero-content p{
+        font-size:18px;
+      }
+
+      .titulo h2{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+      <h1>Nuestras Marcas</h1>
+      <p>Distribución nacional de neumáticos de alta calidad</p>
+    </div>
+
+  </section>
+
+  <!-- MARCAS -->
+
+  <section class="marcas">
+
+    <div class="titulo">
+      <h2>Marcas Disponibles</h2>
+      <p>Trabajamos con fabricantes líderes del mercado</p>
+    </div>
+
+    <div class="grid-marcas">
+
+      <!-- MARCA 1 -->
+
+      <div class="marca-card">
+        <img src="imagen/1.png" alt="">
+        <div class="marca-info">
+          <h3>Michelin</h3>
+          <p>
+            Tecnología premium, excelente rendimiento y máxima durabilidad.
+          </p>
+          <a href="#" class="btn">Ver Marca</a>
+        </div>
+      </div>
+
+      <!-- MARCA 2 -->
+
+      <div class="marca-card">
+        <img src="imagen/2.png" alt="">
+        <div class="marca-info">
+          <h3>Pirelli</h3>
+          <p>
+            Cauchos deportivos y de alto desempeño para carretera.
+          </p>
+          <a href="#" class="btn">Ver Marca</a>
+        </div>
+      </div>
+
+      <!-- MARCA 3 -->
+
+      <div class="marca-card">
+        <img src="imagen/3.png" alt="">
+        <div class="marca-info">
+          <h3>Goodyear</h3>
+          <p>
+            Seguridad, resistencia y eficiencia para todo tipo de vehículos.
+          </p>
+          <a href="#" class="btn">Ver Marca</a>
+        </div>
+      </div>
+
+      <!-- MARCA 4 -->
+
+      <div class="marca-card">
+        <img src="imagen/4.png" alt="">
+        <div class="marca-info">
+          <h3>Bridgestone</h3>
+          <p>
+            Innovación japonesa con gran estabilidad y agarre.
+          </p>
+          <a href="#" class="btn">Ver Marca</a>
+        </div>
+      </div>
+
+      <!-- MARCA 5 -->
+
+      <div class="marca-card">
+        <img src="imagen/5.png" alt="">
+        <div class="marca-info">
+          <h3>Yokohama</h3>
+          <p>
+            Excelente desempeño en ciudad, carretera y carga pesada.
+          </p>
+          <a href="#" class="btn">Ver Marca</a>
+        </div>
+      </div>
+
+      <!-- MARCA 6 -->
+
+      <div class="marca-card">
+        <img src="imagen/6.png" alt="">
+        <div class="marca-info">
+          <h3>Hankook</h3>
+          <p>
+            Calidad y economía con gran duración y confort.
+          </p>
+          <a href="#" class="btn">Ver Marca</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Cauchos Express - Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
